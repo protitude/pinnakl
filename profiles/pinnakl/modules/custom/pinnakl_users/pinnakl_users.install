@@ -3,7 +3,7 @@
 /**
  * Implements hook_install().
  */
-function pinnakl_install() {
+function pinnakl_users_install() {
   // Set secure permissions settings.
   variable_set('secure_permissions_active', '1');
   variable_set('secure_permissions_disable_forms', '0');
