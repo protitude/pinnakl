@@ -1,0 +1,51 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function pinnakl_install() {
+  // Set default theme to bootstrap for now.
+  theme_enable(array('bootstrap'));
+  variable_set('theme_default', 'bootstrap');
+  variable_set('theme_settings', array(
+    'toggle_logo' => 0,
+    'toggle_name' => 1,
+    'toggle_slogan' => 0,
+    'toggle_node_user_picture' => 1,
+    'toggle_comment_user_picture' => 1,
+    'toggle_comment_user_verification' => 1,
+    'toggle_favicon' => 1,
+    'toggle_main_menu' => 1,
+    'toggle_secondary_menu' => 1,
+    'default_logo' => 1,
+    'logo_path' => '',
+    'logo_upload' => '',
+    'default_favicon' => 1,
+    'favicon_path' => '',
+    'favicon_upload' => '',
+    'bootstrap_rebuild_registry' => 0,
+    'cdn_bootstrap' => 1,
+    'cdn_bootstrap_version' => '2.3.2',
+  ));
+
+  // Disable bartik.
+  theme_disable(array('bartik'));
+
+  // Set admin theme to "rubik"
+  variable_set('admin_theme', 'rubik');
+
+  // Admin email.
+  variable_set('update_notify_emails', array('0' => 'miles.france@gmail.com',));
+
+  // Set node edit to admin theme.
+  variable_set('node_admin_theme', 1);
+
+  // Set Front Page.
+  variable_set('site_frontpage', 'node');
+
+  // JQuery update settings.
+  variable_set('jquery_update_compression_type', 'min');
+  variable_set('jquery_update_jquery_cdn', 'google');
+  variable_set('jquery_update_jquery_version', '1.8');
+
+}

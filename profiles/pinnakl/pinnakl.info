@@ -1,0 +1,56 @@
+name = pinnakl install profile.
+description = pinnakl.com
+core = 7.x
+
+; Core
+dependencies[] = block
+dependencies[] = blog
+dependencies[] = contextual
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = path
+dependencies[] = shortcut
+dependencies[] = syslog
+dependencies[] = taxonomy
+dependencies[] = toolbar
+dependencies[] = user
+
+; Contrib
+dependencies[] = bean
+dependencies[] = bean_admin_ui
+dependencies[] = context
+dependencies[] = context_ui
+dependencies[] = ctools
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = date_views
+dependencies[] = diff
+dependencies[] = email
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = eva
+dependencies[] = features
+dependencies[] = field_group
+dependencies[] = field_collection
+dependencies[] = filter_perms
+dependencies[] = globalredirect
+dependencies[] = jquery_update
+dependencies[] = jscrollpane
+dependencies[] = libraries
+dependencies[] = media
+dependencies[] = pathauto
+dependencies[] = redirect
+dependencies[] = strongarm
+dependencies[] = secure_permissions
+dependencies[] = token
+dependencies[] = views
+dependencies[] = views_ui

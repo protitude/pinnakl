@@ -1,0 +1,12 @@
+; $Id: secure_permissions.info,v 1.1 2009/11/22 18:31:54 agentken Exp $
+name = Secure Permissions
+description = Disables the user interface for creating and assigning roles and permissions.
+core = 7.x
+files[] = secure_permissions.module
+
+; Information added by drupal.org packaging script on 2010-12-31
+version = "7.x-1.5"
+core = "7.x"
+project = "secure_permissions"
+datestamp = "1293838563"
+
